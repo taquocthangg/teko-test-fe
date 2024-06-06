@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --primary-color: #E34653;
+    --secondary-color: #A9ACBC;
+    --tertiary-color: #e0ad6e;
+}
+
+.container {
+    max-width: 375px;
+    background-color: rgb(255, 255, 255);
+    margin: 0 auto;
+    border: 0.5px solid var(--secondary-color);
+}
+
+.custom-scroll::-webkit-scrollbar {
+    display: none;
+    /* Ẩn thanh cuộn trên Chrome, Safari và Opera */
+}
+
+.custom-scroll {
+    -ms-overflow-style: none;
+    /* Ẩn thanh cuộn trên Internet Explorer và Edge */
+    scrollbar-width: none;
+    /* Ẩn thanh cuộn trên Firefox */
+}
+
+.truncated-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
